@@ -23,9 +23,9 @@
 - Articles ou documentations consultés
 
 ### Progression
-- Semaine 4 : …
-- Semaine 6 : …
-- Semaine 8 : …
+- Semaine 4 : Apprentissage de l'HTML
+- Semaine 6 : Commencement du site et application basique de mon apprentissage
+- Semaine 8 : Structure HTML basique terminée + insertions des premières images
 - Semaine 10 : …
 - Semaine 11 : …
 - Semaine 12 : …
@@ -47,11 +47,11 @@
 
 ### Choix de design
 - Palette de couleurs :  
-  - Couleur principale : `#XXXXXX` – …
-  - Couleur secondaire : `#XXXXXX` – …
-  - Couleur d’accent : `#XXXXXX` – …
-  - Couleur de texte : `#XXXXXX` – …
-  - Couleur de fond : `#XXXXXX` – …
+  - Couleur principale : `#004D98` – Bleu Barça
+  - Couleur secondaire : `#A50044` – Grenat (rouge)
+  - Couleur d’accent : `#EDBB00` – Or (jaune)
+  - Couleur de texte : `#1E1E1E` – Noir
+  - Couleur de fond : `#FFFFFF` – Blanc
 - Lien vers palette générée : …
 - Typographies :  
   - Titres : … (fichiers dans `/fonts`)  
@@ -86,15 +86,15 @@
 ## 5. 🤖 Usage de l’IA (si applicable)
 
 ### IA utilisée
-- Nom et version : …
+- Nom et version : ChatGPT version gratuite
 - Contexte : génération de code / debug / recherche / rédaction
 
 ### Utilisation détaillée
-- Contenu généré avec l’IA : …
+- Contenu généré avec l’IA : Informations sur le club et sur quelques balises dont je ne connaissais pas l'utilité.
 - Explication et adaptation personnelle du code généré
 
 ### Proportion
-- Structure HTML : …% personnel / …% aidé
+- Structure HTML : 60% personnel / 40% aidé
 - CSS : …% personnel / …% aidé
 - Responsive : …% personnel
 - Tests et validation : 100% personnel
