@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Site fan du FC Barcelone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site fan du FC Barcelone : histoire, palmarès et légendes.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -10,21 +12,97 @@
 <header>
     <img src="images/Logo_FC_Barcelone.svg.png" alt="Logo FC Barcelone" width="100" height="100">
     <h1>Site fan du FC Barcelone</h1>
+    <nav>
+        <ul>
+            <li><a href="#histoire">Histoire</a></li>
+            <li><a href="#creation">Création</a></li>
+            <li><a href="#palmares">Palmarès</a></li>
+            <li><a href="#legendes">Légendes</a></li>
+        </ul>
+    </nav>
 </header>
 
-<main class="container">
-    <nav class="tabs">
-        <a href="histoire.html">Histoire</a>
-        <a href="creation.html">Création</a>
-        <a href="palmares.html">Palmarès</a>
-        <a href="legendes.html">Légendes</a>
-    </nav>
-
-    <section>
+<main>
+    <section id="accueil">
         <h2>Bienvenue sur le site des fans du FC Barcelone</h2>
         <p>Choisissez un onglet pour découvrir l’histoire, la création, le palmarès et les légendes du club.</p>
     </section>
+
+    <section id="histoire">
+        <h2>Histoire du FC Barcelone</h2>
+        <div class="contenu">
+            <p>Le FC Barcelone, fondé en 1899 par Joan Gamper, est bien plus qu’un club de football : un symbole culturel, sportif et social en Catalogne. Depuis sa création, il incarne la devise « Més que un club » — plus qu’un club.</p>
+            <img src="images/Joan_Gamper_1910_year.jpg" alt="Joan Gamper en 1910" width="500" height="500">
+        </div>
+    </section>
+
+    <section id="creation">
+        <h2>Création du FC Barcelone</h2>
+        <div class="contenu">
+            <p>Le club a été fondé par un groupe de jeunes footballeurs passionnés. Leur ambition a donné naissance à une institution mondiale symbolisant la passion, la culture et le sport.</p>
+            <img src="images/fondateurs_barca.jpg" alt="Fondateurs du Barça" width="800" height="500">
+        </div>
+    </section>
+
+    <section id="palmares">
+        <h2>Palmarès du FC Barcelone</h2>
+        <div class="container">
+            <ul>
+                <li>
+                    <h3>LaLiga — 27 titres</h3>
+                    <img src="images/liga.jpg" alt="Liga">
+                </li>
+                <li>
+                    <h3>Ligue des Champions — 5 titres</h3>
+                    <img src="images/ldc.jpg" alt="Ligue des Champions">
+                </li>
+                <li>
+                    <h3>Coupe du Roi — 31 titres</h3>
+                    <img src="images/coupeDuRoi.jpg" alt="Coupe du Roi">
+                </li>
+                <li>
+                    <h3>Supercoupe d’Espagne — 14 titres</h3>
+                    <img src="images/superCoupe.jpg" alt="Supercoupe d’Espagne">
+                </li>
+                <li>
+                    <h3>Coupe du Monde des Clubs — 3 titres</h3>
+                    <img src="images/coupeDuMondeDesClubs.jpg" alt="Coupe du Monde des Clubs">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="legendes">
+        <h2>Légendes du FC Barcelone</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Johan Cruyff</h3>
+                <img src="images/cruyff.jpg" alt="Johan Cruyff">
+                <p>Icône du football total, il a révolutionné le Barça comme joueur et entraîneur.</p>
+            </div>
+            <div class="card">
+                <h3>Lionel Messi</h3>
+                <img src="images/messi.webp" alt="Lionel Messi">
+                <p>Meilleur buteur et joueur emblématique du club, véritable légende vivante.</p>
+            </div>
+            <div class="card">
+                <h3>Andrés Iniesta</h3>
+                <img src="images/iniesta.jpg" alt="Andrés Iniesta">
+                <p>Un des milieux les plus élégants de l’histoire du football, héros de 2010.</p>
+            </div>
+        </div>
+    </section>
 </main>
+
+<footer>
+    <p>© 2025 Site fan du FC Barcelone. Tous droits réservés.</p>
+</footer>
 
 </body>
 </html>
+
+
+
+
+
+
