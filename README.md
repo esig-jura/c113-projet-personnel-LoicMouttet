@@ -26,7 +26,7 @@
 - Semaine 4 : Apprentissage de l'HTML
 - Semaine 6 : Commencement du site et application basique de mon apprentissage
 - Semaine 8 : Structure HTML basique terminée + insertions des premières images
-- Semaine 10 : …
+- Semaine 10 : Structure HTML terminée + début CSS
 - Semaine 11 : …
 - Semaine 12 : …
 
@@ -94,8 +94,8 @@
 - Explication et adaptation personnelle du code généré
 
 ### Proportion
-- Structure HTML : 60% personnel / 40% aidé
-- CSS : …% personnel / …% aidé
+- Structure HTML : 50% personnel / 50% aidé
+- CSS : 20% personnel / 80% aidé
 - Responsive : …% personnel
 - Tests et validation : 100% personnel
 
