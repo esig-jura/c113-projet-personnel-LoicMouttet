@@ -9,26 +9,27 @@
 - Objectifs du site : Répertorier sur ce site un maximum d'information sur le club.
 
 ### Fonctionnalités prévues
-- Navigation : …
-- Sections principales : …
-- Contenus proposés : …
+- Navigation : 1 page avec plusieurs onglets
+- Sections principales : Histoire, Création, Palmarès, Légendes
+- Contenus proposés : Historique du FC Barcelone
 
 ---
 
 ## 2. 📚 Parcours d'apprentissage
 
 ### Ressources utilisées
-- Plateformes (OpenClassrooms, MDN, freeCodeCamp, etc.)
-- Vidéos / tutoriels suivis
-- Articles ou documentations consultés
+- Plateformes : GrafikArt, OpenClassroom
+- Vidéos / tutoriels suivis : Comment coder en HTML/CSS
+- Articles ou documentations consultés : https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Elements
 
 ### Progression
 - Semaine 4 : Apprentissage de l'HTML
 - Semaine 6 : Commencement du site et application basique de mon apprentissage
 - Semaine 8 : Structure HTML basique terminée + insertions des premières images
-- Semaine 10 : Structure HTML terminée + début CSS
-- Semaine 11 : …
-- Semaine 12 : …
+- Semaine 10 : Structure HTML terminée + apprentissage CSS
+- Semaine 11 : Début CSS + ajout de certaines images pour améliorer le CSS
+- Semaine 12 : Finalisation du CSS de base
+- Semaine 13 : 
 
 ---
 
@@ -52,7 +53,7 @@
   - Couleur d’accent : `#EDBB00` – Or (jaune)
   - Couleur de texte : `#1E1E1E` – Noir
   - Couleur de fond : `#FFFFFF` – Blanc
-- Lien vers palette générée : …
+- Lien vers palette générée : https://coolors.co/004d98-a50044-edbb00-000000-ffffff
 - Typographies :  
   - Titres : … (fichiers dans `/fonts`)  
   - Texte : … (fichiers dans `/fonts`)  
@@ -86,7 +87,7 @@
 ## 5. 🤖 Usage de l’IA (si applicable)
 
 ### IA utilisée
-- Nom et version : ChatGPT version gratuite
+- Nom et version : ChatGPT version 5.1
 - Contexte : génération de code / debug / recherche / rédaction
 
 ### Utilisation détaillée
@@ -95,8 +96,8 @@
 
 ### Proportion
 - Structure HTML : 50% personnel / 50% aidé
-- CSS : 20% personnel / 80% aidé
-- Responsive : …% personnel
+- CSS : 30% personnel / 70% aidé
+- Responsive : 
 - Tests et validation : 100% personnel
 
 ---
