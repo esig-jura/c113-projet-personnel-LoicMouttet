@@ -29,7 +29,7 @@
 - Semaine 10 : Structure HTML terminée + apprentissage CSS
 - Semaine 11 : Début CSS + ajout de certaines images pour améliorer le CSS
 - Semaine 12 : Finalisation du CSS de base
-- Semaine 13 : 
+
 
 ---
 
@@ -54,7 +54,7 @@
   - Couleur de texte : `#1E1E1E` – Noir
   - Couleur de fond : `#FFFFFF` – Blanc
 - Lien vers palette générée : https://coolors.co/004d98-a50044-edbb00-000000-ffffff
-- Typographies :  
+- Typographies :  BebasNeue, JerseyM54, 
   - Titres : … (fichiers dans `/fonts`)  
   - Texte : … (fichiers dans `/fonts`)  
 
