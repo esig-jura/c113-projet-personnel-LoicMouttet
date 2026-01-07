@@ -1,30 +1,26 @@
-/* ---------------------------- */
 /* POLICES */
-
 @font-face {
     font-family: 'BebasNeue';
     src: url('fonts/BebasNeue-Regular.woff2') format('woff2'),
-    url('fonts/BebasNeue-Regular.woff2') format('woff2');
+    url('fonts/BebasNeue-Regular.woff2') format('woff');
     font-display: swap;
 }
 
 @font-face {
     font-family: 'JerseyM54';
     src: url('fonts/JerseyM54.woff2') format('woff2'),
-    url('fonts/JerseyM54.woff2') format('woff2');
+    url('fonts/JerseyM54.woff2') format('woff');
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Barlow';
     src: url('fonts/Barlow-SemiBold.woff2') format('woff2'),
-    url('fonts/Barlow-SemiBold.woff2') format('woff2');
+    url('fonts/Barlow-SemiBold.woff2') format('woff');
     font-display: swap;
 }
 
-/* ---------------------------- */
 /* PALETTE & BASE */
-
 :root {
     --barca-blue: #004D98;
     --barca-red: #A50044;
@@ -33,10 +29,9 @@
     --barca-gray: #f8f8f8;
     --text-dark: #1e1e1e;
 
-    /* Polices */
-    --font-main: "Barlow", sans-serif; /* Texte */
-    --font-title: "JerseyM54", sans-serif; /* h1, h2, h3 */
-    --font-subtitle: "BebasNeue", sans-serif; /* Titres de section h2 */
+    --font-main: "Barlow", sans-serif;
+    --font-title: "JerseyM54", sans-serif;
+    --font-subtitle: "BebasNeue", sans-serif;
 
     --space-xs: 5px;
     --space-sm: 10px;
@@ -46,10 +41,16 @@
     --anchor-offset: 190px;
 }
 
+/* RESET */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--anchor-offset);
 }
 
 body {
@@ -57,6 +58,7 @@ body {
     color: var(--text-dark);
     background: url("images/campnou.jpg") no-repeat center center fixed;
     background-size: cover;
+    line-height: 1.6;
 }
 
 /* Voile blanc */
@@ -68,17 +70,32 @@ body::before {
     z-index: -1;
 }
 
-/* ---------------------------- */
-/* HEADER */
+/* TITRES */
+h1, h3 {
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
 
+/* Titres de section */
+section h2 {
+    font-family: var(--font-subtitle);
+    letter-spacing: 2px;
+    font-size: 40px;
+    color: var(--barca-blue);
+    margin-bottom: var(--space-md);
+}
+
+/* HEADER */
 header {
-    background: var(--barca-blue);
-    color: var(--barca-white);
+    background: linear-gradient(90deg, var(--barca-blue) 60%, var(--barca-red) 100%);
     text-align: center;
     padding: var(--space-md) 0;
     position: sticky;
     top: 0;
     z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 header img {
@@ -87,15 +104,12 @@ header img {
 }
 
 header h1 {
-    font-family: var(--font-title);
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+    color: var(--barca-yellow);
 }
 
-/* ---------------------------- */
 /* NAVIGATION */
-
 nav ul {
     list-style: none;
     display: flex;
@@ -109,16 +123,15 @@ nav a {
     text-decoration: none;
     color: var(--barca-yellow);
     font-weight: bold;
+    transition: 0.3s ease;
 }
 
-nav a:hover,
-nav a:focus {
-    color: var(--barca-yellow);
+nav a:hover {
+    color: var(--barca-white);
+    border-bottom: 2px solid var(--barca-yellow);
 }
 
-/* ---------------------------- */
 /* SECTIONS */
-
 main {
     padding: var(--space-lg) var(--space-md);
     max-width: 1100px;
@@ -126,59 +139,57 @@ main {
 }
 
 section {
-    text-align: center;
     margin-bottom: 60px;
+    text-align: center;
+    scroll-margin-top: 200px;
 }
 
-/* TITRES DE SECTION */
-h2 {
-    font-family: var(--font-subtitle);
-    color: var(--barca-blue);
-    font-size: 1.8rem;
-    letter-spacing: 1px;
-    margin-bottom: var(--space-md);
-}
-
-/* ---------------------------- */
 /* TEXTE */
-
 p {
     max-width: 800px;
     margin: 0 auto var(--space-md);
-    font-size: 1.1rem;
+    font-size: 19px;
+    line-height: 27px;
 }
 
-/* ---------------------------- */
 /* CONTENU HORIZONTAL */
-
 .contenu {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 2rem;
     flex-wrap: wrap;
     background: var(--barca-white);
+    border: 2px solid var(--barca-blue);
+    border-radius: 15px;
     padding: var(--space-md);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .contenu p {
     flex: 1;
+    min-width: 250px;
     text-align: justify;
 }
 
 .contenu img {
-    width: 200px;
-    height: 150px;
+    flex: 1;
+    max-width: 500px;
+    height: 300px;
+    border-radius: 12px;
     object-fit: cover;
+    filter: brightness(0.95);
+    transition: 0.3s ease;
+}
+
+.contenu img:hover {
+    filter: brightness(1.1);
 }
 
 .contenu.inverse {
     flex-direction: row-reverse;
 }
 
-/* ---------------------------- */
 /* PALMARÈS */
-
 #palmares .container ul {
     list-style: none;
     display: grid;
@@ -189,60 +200,112 @@ p {
 #palmares .container li {
     background: var(--barca-white);
     border: 2px solid var(--barca-blue);
+    border-radius: 15px;
     padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     gap: 15px;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+#palmares .container li:hover {
+    transform: translateY(-5px);
 }
 
 #palmares .container li img {
-    width: 130px;
-    height: 90px;
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
     object-fit: cover;
 }
 
-/* ---------------------------- */
-/* LÉGENDES / CARTES */
+/* TITRES DES CARTES DU PALMARÈS */
+#palmares .container li h4 {
+    color: var(--barca-red);
+}
+
+/* AJUSTEMENT LÉGENDES */
+#legendes {
+    margin-top: -40px;
+}
+
+/* CARTES */
+.grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
 
 .card {
     background: var(--barca-white);
+    border: 2px solid var(--barca-blue);
+    border-radius: 15px;
     padding: 20px;
-    max-width: 900px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     width: 100%;
-    text-align: center;
+    max-width: 1030px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    filter: brightness(1.05);
 }
 
 .card img {
-    max-width: 260px;
     width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
 }
 
-.card.portrait {
-    flex-direction: row;
-    gap: 20px;
+.card h3 {
+    color: var(--barca-red);
+    font-size: 29px;
 }
 
-/* ---------------------------- */
-/* FOOTER */
+/* LISTES */
+ul.liste-gauche {
+    display: inline-block;
+    text-align: left;
+    padding-left: 25px;
+    max-width: 600px;
+}
+
+ul.liste-gauche li {
+    margin-bottom: 8px;
+    font-size: 18px;
+}
 
 footer {
-    background: var(--barca-blue);
+    background: linear-gradient(90deg, var(--barca-blue) 60%, var(--barca-red) 100%);
     color: var(--barca-white);
     text-align: center;
     padding: 30px 0;
-}
-
-footer p {
-    margin: 0;
+    font-size: 14px;
 }
 
 /* RESPONSIVE */
+@media (max-width: 992px) {
+    .contenu, .card {
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 768px) {
-    .contenu img {
-        width: 100%;
-        height: auto;
+    header h1 {
+        font-size: 26px;
     }
 
-    header h1 {
-        font-size: 1.6rem;
+    .contenu img {
+        width: 100%;
+    }
+
+    #palmares .container li {
+        flex-direction: column;
     }
 }
